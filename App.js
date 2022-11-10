@@ -77,12 +77,12 @@
  
  const MyChip = () => (
  
-   <Chip style={styles.chip1} icon="wifi" onPress={() => console.log('Pressed')}>Wifi</Chip>
+   <Chip  icon="wifi" onPress={() => selectedColor='red'}>Wifi</Chip>
    
  );
  
  const MyChip2 = () => (
-   <Chip selectedcolor='red' style={styles.chip2} icon="web" onPress={() => console.log('Pressed')}>Internet</Chip>
+   <Chip selectedColor='red' style={styles.chip2} icon="web" onPress={() => console.log('Pressed')}>Internet</Chip>
  )
  
  
@@ -116,6 +116,9 @@
            />
            <Section title="BUTTON(AMB TEXT I ICON)"></Section>
            <Button icon="alien" mode="contained" onPress={() => console.log('Pressed')}>
+           ALIEN
+           </Button>
+           <Button icon="alien" mode="elevated" onPress={() => console.log('Pressed')}>
            ALIEN
            </Button>
            <Button icon="alien" mode="outlined" onPress={() => console.log('Pressed')}>
